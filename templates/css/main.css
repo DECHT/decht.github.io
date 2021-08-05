@@ -1,0 +1,346 @@
+  /** import fonts **/
+
+  @font-face {
+      font-family: 'NotoSans-Bold';
+      src        : url('../fonts/NotoSans-Bold.ttf');
+  }
+
+  @font-face {
+      font-family: 'NotoSans-Regular';
+      src        : url('../fonts/NotoSans-Regular.ttf');
+  }
+
+
+
+
+
+  /** declare variables **/
+
+  :root {
+      --azure             : #7acaef;
+      --blue              : #4cb4e7;
+      --grey              : #3c3c3c;
+      --working-area-width: 1400px;
+  }
+
+
+
+
+
+
+  /** common styles **/
+
+  .working-area {
+      position: absolute;
+      width   : var(--working-area-width);
+      margin  : 0 auto;
+      left    : 0;
+      right   : 0;
+      color   : var(--grey) !important;
+  }
+
+  .container {
+      padding-right: 0 !important;
+      padding-left : 0 !important;
+      max-width    : var(--working-area-width) !important;
+  }
+
+  .row {
+      column-gap: 40px;
+  }
+
+  .col-sm-4 {
+      width: 31% !important;
+  }
+
+  .table-title-grey {
+      font-family   : 'NotoSans-Bold';
+      font-size     : 20pt;
+      padding-bottom: 10px;
+  }
+
+  .normal-text-grey {
+      font-family: 'NotoSans-Regular';
+      font-size  : 13pt;
+  }
+
+  .yaookButton {
+      background-color: var(--azure);
+      display         : inline-block;
+      width           : 270px;
+      height          : 60px;
+      cursor          : pointer;
+      color           : #ffffff;
+      font-family     : 'NotoSans-Bold';
+      font-size       : 18px;
+      padding-top     : 16px;
+      text-decoration : none;
+      text-align      : center;
+  }
+
+  .yaookButton:hover {
+      background-color: var(--blue);
+      color           : #ffffff;
+      text-decoration : none;
+  }
+
+  .yaookButton:active {
+      text-decoration: none;
+  }
+
+  .yaookButton-white {
+      background-color: white;
+      display         : inline-block;
+      width           : 270px;
+      height          : 60px;
+      cursor          : pointer;
+      color           : var(--blue);
+      font-family     : 'NotoSans-Bold';
+      font-size       : 18px;
+      padding-top     : 16px;
+      text-decoration : none;
+      text-align      : center;
+  }
+
+  .yaookButton-white:hover {
+      background-color: var(--azure);
+      color           : #ffffff;
+      text-decoration : none;
+  }
+
+  .yaookButton-white:active {
+      text-decoration: none;
+  }
+
+
+
+
+  /** welcome-section **/
+
+  .welcome-section {
+      height           : 880px;
+      width            : 100%;
+      background-image : url(../img/winter.jpg);
+      background-repeat: no-repeat;
+      background-size  : 100% 100%;
+      margin           : 0 auto;
+      display          : block;
+      border-bottom    : 20px solid var(--azure);
+  }
+
+  .top-logo {
+      position: absolute;
+      left    : 50%;
+  }
+
+  .welcome-title {
+      position   : absolute;
+      top        : 440px;
+      font-family: 'NotoSans-Bold';
+      font-size  : 46pt;
+  }
+
+  .lifecycle-title span {
+      background-color: var(--blue);
+      color           : white;
+      font-family     : 'NotoSans-Bold';
+      font-size       : 46pt;
+  }
+
+  .lifecycle-title {
+      position: absolute;
+      top     : 580px;
+  }
+
+
+
+
+
+
+  /**  project-section **/
+
+  .project-section {
+      min-height: 550px;
+  }
+
+  .title-dark {
+      position   : absolute;
+      top        : 180px;
+      font-family: 'NotoSans-Bold';
+      font-size  : 46pt;
+  }
+
+  .project-container {
+      position: absolute;
+      top     : 350px;
+  }
+
+
+
+
+
+  /** overview-section **/
+
+  .overview-section {
+      min-height     : 1350px;
+      margin-top     : -150px;
+      background     : url('../img/Husky_blue.svg') bottom -20px left 0px no-repeat;
+      background-size: 30%;
+  }
+
+
+  .table-title-azure {
+      font-family   : 'NotoSans-Bold';
+      font-size     : 20pt;
+      padding-top   : 5px;
+      padding-bottom: 10px;
+      color         : var(--azure)
+  }
+
+  .overview-container {
+      position: absolute;
+      top     : 350px;
+  }
+
+  .title-right-dark {
+      position   : relative;
+      top        : 130px;
+      bottom     : 10px;
+      font-family: 'NotoSans-Bold';
+      font-size  : 46pt;
+  }
+
+
+
+
+
+  /** partners-section **/
+
+  .partners-section {
+      min-height         : 1000px;
+      background-image   : url('../img/Husky-white-cut.svg');
+      background-repeat  : no-repeat;
+      background-size    : 800px 1000px;
+      background-color   : var(--azure);
+      background-position: right -100px top 30%;
+
+  }
+
+  .title-white {
+      position   : absolute;
+      top        : 180px;
+      font-family: 'NotoSans-Bold';
+      font-size  : 46pt;
+      color      : white;
+  }
+
+  .table-title-white {
+      font-family   : 'NotoSans-Bold';
+      font-size     : 20pt;
+      padding-top   : 5px;
+      padding-bottom: 10px;
+      color         : white;
+  }
+
+  .normal-text-white {
+      font-family: 'NotoSans-Regular';
+      font-size  : 13pt;
+      color      : white;
+  }
+
+
+
+
+
+  /** lifecycle-management-section **/
+
+  .lifecycle-management-section {
+      min-height   : 1080px;
+      margin-bottom: 90px;
+  }
+
+  .big-title-dark {
+      position   : relative;
+      top        : 130px;
+      font-family: 'NotoSans-Bold';
+      font-size  : 115pt;
+      line-height: 115%;
+  }
+
+  .lifecycle-management-container {
+      position: relative;
+      top     : 250px;
+  }
+
+
+
+
+
+  /** get-in-touch-section **/
+  .get-in-touch-section {
+      height           : 465px;
+      width            : 100%;
+      background-image : url(../img/winter2.jpg);
+      background-repeat: no-repeat;
+      background-size  : 100% 100%;
+      margin           : 0 auto;
+      display          : block;
+      border-bottom    : 20px solid var(--azure);
+  }
+
+  .get-in-touch-container {
+      position: absolute;
+      top     : 230px;
+  }
+
+
+
+
+
+
+  /** job-section **/
+  .job-section {
+      min-height   : 920px;
+      margin-bottom: 130px;
+  }
+
+
+
+
+
+
+  /** contact-section **/
+
+  .contact-section {
+      min-height      : 750px;
+      background-color: var(--azure);
+  }
+
+  .whiteLink {
+
+      display        : inline-block;
+      cursor         : pointer;
+      color          : #ffffff;
+      font-family    : 'NotoSans-Regular';
+      text-decoration: none;
+  }
+
+  .whiteLink:hover {
+      color          : #ffffff;
+      text-decoration: none;
+  }
+
+  .whiteLink:active {
+      text-decoration: none;
+  }
+
+  .contact-container {
+      position: relative;
+      top     : 130px;
+  }
+
+  .bold-text-white {
+    font-family: 'NotoSans-Bold';
+    font-size  : 13pt;
+    color      : white;
+}
