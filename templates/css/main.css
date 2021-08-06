@@ -73,9 +73,9 @@
 
   @media screen and (max-width: 1400px) {
       .row {
-        column-gap: none !important;
-          width  : 100% !important;
-          row-gap: 40px !important;
+          column-gap: none !important;
+          width     : 100% !important;
+          row-gap   : 40px !important;
       }
 
       .col-sm-4 {
@@ -278,8 +278,8 @@
 
       .column-right {
           position: absolute;
-          right: 0;
-          width: 450px !important;
+          right   : 0;
+          width   : 450px !important;
       }
   }
 
@@ -299,7 +299,7 @@
 
   @media screen and (max-width: 1600px) {
       .partners-section {
-        background-position: right -200px top 30%;
+          background-position: right -200px top 30%;
       }
   }
 
@@ -399,7 +399,7 @@
 
   @media screen and (max-width: 1400px) {
       .job-section {
-          min-height   : 800px;
+          min-height: 800px;
       }
   }
 
@@ -435,14 +435,16 @@
   .contact-container {
       position: relative;
       top     : 130px;
-      display: flex;
-      flex-direction: column !important;
-      justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .bold-text-white {
       font-family: 'NotoSans-Bold';
       font-size  : 13pt;
       color      : white;
+  }
+
+  @media screen and (max-width: 1400px) {
+      .contact-section {
+          min-height: 1350px;
+      }
   }
