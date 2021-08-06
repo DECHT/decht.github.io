@@ -33,10 +33,18 @@
   .working-area {
       position: absolute;
       width   : var(--working-area-width);
-      margin  : 0 auto;
+      margin  : auto auto;
       left    : 0;
       right   : 0;
       color   : var(--grey) !important;
+
+  }
+
+  /* For Mobile */
+  @media screen and (max-width: 1600px) {
+      .working-area {
+          width: 80%;
+      }
   }
 
   .container {
@@ -51,6 +59,21 @@
 
   .col-sm-4 {
       width: 31% !important;
+  }
+
+  @media screen and (max-width: 1600px) {
+      .row {
+          column-gap: 0;
+          row-gap   : 20px;
+      }
+
+      .col-sm-4 {
+          width: 100% !important;
+      }
+
+      .column2 {
+          width: 50% !important;
+      }
   }
 
   .table-title-grey {
@@ -118,19 +141,25 @@
   /** welcome-section **/
 
   .welcome-section {
-      height           : 880px;
+      min-height       : 880px;
+      max-height       : 1200px;
       width            : 100%;
       background-image : url(../img/winter.jpg);
       background-repeat: no-repeat;
       background-size  : 100% 100%;
       margin           : 0 auto;
-      display          : block;
       border-bottom    : 20px solid var(--azure);
   }
 
-  .top-logo {
-      position: absolute;
-      left    : 50%;
+  @media screen and (max-width: 1600px) {
+      .welcome-section {
+          min-height: 1100px;
+      }
+  }
+
+  img.center {
+      display: block;
+      margin : 10px auto;
   }
 
   .welcome-title {
@@ -148,8 +177,9 @@
   }
 
   .lifecycle-title {
-      position: absolute;
-      top     : 580px;
+      position : absolute;
+      top      : 580px;
+      flex-grow: 2;
   }
 
 
@@ -160,11 +190,17 @@
   /**  project-section **/
 
   .project-section {
-      min-height: 550px;
+      min-height: 600px;
+  }
+
+  @media screen and (max-width: 1600px) {
+      .project-section {
+          min-height: 900px;
+      }
   }
 
   .title-dark {
-      position   : absolute;
+      position   : relative;
       top        : 180px;
       font-family: 'NotoSans-Bold';
       font-size  : 46pt;
@@ -188,6 +224,11 @@
       background-size: 30%;
   }
 
+  @media screen and (max-width: 1600px) {
+      .overview-section {
+          min-height: 1650px;
+      }
+  }
 
   .table-title-azure {
       font-family   : 'NotoSans-Bold';
@@ -202,15 +243,25 @@
       top     : 350px;
   }
 
+  .go-to-gitlab {
+      position: relative;
+      top     : 160px;
+  }
+
   .title-right-dark {
       position   : relative;
-      top        : 130px;
-      bottom     : 10px;
+      bottom     : 30px;
       font-family: 'NotoSans-Bold';
       font-size  : 46pt;
   }
 
 
+  @media screen and (max-width: 1600px) {
+      .go-to-gitlab {
+          position: relative;
+          top     : 60px;
+      }
+  }
 
 
 
@@ -223,9 +274,15 @@
       background-size    : 800px 1000px;
       background-color   : var(--azure);
       background-position: right -100px top 30%;
-
   }
-
+  
+  @media screen and (max-width: 1600px) {
+    .partners-section {
+        min-height         : 1300px;
+        background-image   : none;
+    }
+}
+  
   .title-white {
       position   : absolute;
       top        : 180px;
@@ -340,7 +397,7 @@
   }
 
   .bold-text-white {
-    font-family: 'NotoSans-Bold';
-    font-size  : 13pt;
-    color      : white;
-}
+      font-family: 'NotoSans-Bold';
+      font-size  : 13pt;
+      color      : white;
+  }
