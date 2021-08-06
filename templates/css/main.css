@@ -40,7 +40,6 @@
 
   }
 
-  /* For Mobile */
   @media screen and (max-width: 1600px) {
       .working-area {
           width: 80%;
@@ -163,8 +162,8 @@
   }
 
   .welcome-title {
-      position   : absolute;
-      top        : 440px;
+      position   : relative;
+      top        : 290px;
       font-family: 'NotoSans-Bold';
       font-size  : 46pt;
   }
@@ -177,8 +176,8 @@
   }
 
   .lifecycle-title {
-      position : absolute;
-      top      : 580px;
+      position : relative;
+      top      : 340px;
       flex-grow: 2;
   }
 
@@ -329,7 +328,16 @@
       top     : 250px;
   }
 
-
+  @media screen and (max-width: 1600px) {
+    .lifecycle-management-section {
+        min-height   : 1080px;
+        margin-bottom: 90px;
+    }
+  
+    .big-title-dark {
+        font-size  : 10vw;
+    }
+}
 
 
 
@@ -361,6 +369,12 @@
       margin-bottom: 130px;
   }
 
+  @media screen and (max-width: 1600px) {
+    .job-section {
+        min-height   : 720px;
+        margin-bottom: 130px;
+    }
+}
 
 
 
