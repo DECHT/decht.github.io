@@ -1,4 +1,4 @@
-  /** import fonts **/
+  /***** import fonts *****/
 
   @font-face {
       font-family: 'NotoSans-Bold';
@@ -14,7 +14,7 @@
 
 
 
-  /** declare variables **/
+  /***** declare variables *****/
 
   :root {
       --azure             : #7acaef;
@@ -37,21 +37,21 @@
       }
   }
 
-  /* smartphone */
+  /* phone */
   @media screen and (max-width: 650px) {
       :root {
           --font-very-large: 9.5vw;
-          --font-large     : 8.5vw;
+          --font-large     : 8vw;
           --font-medium    : 7vw;
           --font-small     : 5vw;
           --font-button    : 3.5vw;
-          --font-very-small: 4vw;
+          --font-very-small: 3.5vw;
       }
   }
 
 
 
-  /** common styles **/
+  /***** common styles *****/
 
   .working-area {
       position: absolute;
@@ -163,15 +163,16 @@
       }
   }
 
-  /* smartphone */
+  /* phone */
   @media screen and (max-width: 650px) {
       .column2 {
           width: 100% !important;
       }
 
-      .yaookButton, .yaookButton-white {
-          width      : 40vw;
-          height     : 10vw;
+      .yaookButton,
+      .yaookButton-white {
+          width : 40vw;
+          height: 10vw;
       }
   }
 
@@ -183,7 +184,7 @@
 
 
 
-  /** welcome-section **/
+  /***** welcome-section *****/
 
   .welcome-section {
       min-height       : 880px;
@@ -192,7 +193,7 @@
       height           : fit-content;
       background-image : url(../img/winter.jpg);
       background-repeat: no-repeat;
-      background-size  : 100% 100%;
+      background-size  : cover;
       margin           : 0 auto;
       border-bottom    : 20px solid var(--azure);
   }
@@ -221,7 +222,7 @@
       top     : 310px;
   }
 
-
+  /* tablet */
   @media screen and (max-width: 1400px) {
       .welcome-section {
           min-height: 1100px;
@@ -233,6 +234,7 @@
       }
   }
 
+  /* phone */
   @media screen and (max-width: 650px) {
       .welcome-section {
           min-height: 850px;
@@ -250,7 +252,9 @@
 
 
 
-  /**  project-section **/
+
+
+  /*****  project-section *****/
 
   .project-section {
       min-height: 600px;
@@ -275,10 +279,10 @@
       }
   }
 
-  /* smartphone */
+  /* phone */
   @media screen and (max-width: 650px) {
       .project-section {
-          min-height: 1020px;
+          min-height: 190vw;
       }
 
       .title-dark {
@@ -288,6 +292,10 @@
       .project-container {
           top: 20vw;
       }
+
+      #empty-cell {
+          display: none !important;
+      }
   }
 
 
@@ -295,7 +303,7 @@
 
 
 
-  /** overview-section **/
+  /***** overview-section *****/
 
   .overview-section {
       min-height     : 1350px;
@@ -329,6 +337,11 @@
       font-size  : var(--font-large);
   }
 
+  .button-describing {
+      position: relative;
+      top     : 12px;
+  }
+
   /* tablet */
   @media screen and (max-width: 1400px) {
       .overview-section {
@@ -347,22 +360,41 @@
       }
   }
 
-  /* smartphone */
+  /* phone */
   @media screen and (max-width: 650px) {
       .overview-section {
-          min-height: 2100px;
+          min-height: 350vw;
       }
 
       .column-right {
           position: absolute;
-          right   : 0;
-          width   : 400px !important;
+          right   : 0 !important;
+          width   : 65vw !important;
+      }
+
+      .overview-container {
+          position: relative;
+          top     : 20vw;
+      }
+
+      .husky-table {
+          width : 16vw;
+          height: 13vw;
+      }
+
+      .go-to-gitlab {
+          top: 20vw;
+      }
+
+      .title-right-dark {
+          position: relative;
+          bottom  : 5vw;
       }
   }
 
 
 
-  /** partners-section **/
+  /***** partners-section *****/
 
   .partners-section {
       min-height         : 1000px;
@@ -371,20 +403,6 @@
       background-size    : 800px 1000px;
       background-color   : var(--azure);
       background-position: right -100px top 30%;
-  }
-
-  /* laptop */
-  @media screen and (max-width: 1600px) {
-      .partners-section {
-          background-position: right -200px top 30%;
-      }
-  }
-
-  @media screen and (max-width: 1400px) {
-      .partners-section {
-          min-height      : 1300px;
-          background-image: none;
-      }
   }
 
   .title-white {
@@ -409,11 +427,37 @@
       color      : white;
   }
 
+  /* laptop */
+  @media screen and (max-width: 1600px) {
+      .partners-section {
+          background-position: right -200px top 30%;
+      }
+  }
+
+  /* tablet */
+  @media screen and (max-width: 1400px) {
+      .partners-section {
+          min-height      : 1300px;
+          background-image: none;
+      }
+  }
+
+  /* smatrphone */
+  @media screen and (max-width: 650px) {
+      .partners-section {
+          min-height      : 360vw;
+          background-image: none;
+      }
+
+      .title-white {
+          position: relative;
+          top     : 15vw;
+      }
+  }
 
 
 
-
-  /** lifecycle-management-section **/
+  /***** lifecycle-management-section *****/
 
   .lifecycle-management-section {
       min-height   : 1080px;
@@ -433,6 +477,7 @@
       top     : 250px;
   }
 
+  /*  tablet */
   @media screen and (max-width: 1400px) {
       .lifecycle-management-section {
           min-height   : 1080px;
@@ -444,15 +489,38 @@
       }
   }
 
+  /* phone */
+  @media screen and (max-width: 650px) {
+      .lifecycle-management-section {
+          min-height   : 210vw;
+      }
+
+      .big-title-dark {
+          font-size: var(--font-very-large);
+      }
+
+      .big-title-dark {
+        top        : 17vw;
+    }
+
+    .lifecycle-management-container{
+        top: 30vw;
+    }
+
+    .table-title-grey{
+        padding-bottom: 0;
+    }
+  }
 
 
-  /** get-in-touch-section **/
+
+  /***** get-in-touch-section *****/
   .get-in-touch-section {
       height           : 465px;
       width            : 100%;
       background-image : url(../img/winter2.jpg);
       background-repeat: no-repeat;
-      background-size  : 100% 100%;
+      background-size  : cover;
       margin           : 0 auto;
       display          : block;
       border-bottom    : 20px solid var(--azure);
@@ -463,33 +531,67 @@
       top     : 230px;
   }
 
+  .get-in-touch-title{
+      top: 90px;
+  }
+ 
+
+  /* phone */
+  @media screen and (max-width: 650px) {
+    .get-in-touch-section {
+        height           : 100vw;
+    }
+
+    .get-in-touch-title{
+        top: 10vw;;
+    }
+
+    .get-in-touch-container {
+        position: relative;
+        top     : 20vw;
+    }
+}
 
 
 
 
 
-  /** job-section **/
+  /***** job-section *****/
+
   .job-section {
       min-height   : 920px;
       margin-bottom: 130px;
   }
 
+  /* tablet */
   @media screen and (max-width: 1400px) {
       .job-section {
           min-height: 800px;
       }
   }
 
+  /* phone */
+  @media screen and (max-width: 650px) {
+    .job-section {
+        min-height: 80vw;
+    }
+}
 
 
 
 
-  /** contact-section **/
+
+  /***** contact-section *****/
 
   .contact-section {
       min-height      : 750px;
       background-color: var(--azure);
   }
+
+  .contact-container {
+    position: relative;
+    top     : 130px;
+}
 
   .whiteLink {
 
@@ -510,10 +612,6 @@
       text-decoration: none;
   }
 
-  .contact-container {
-      position: relative;
-      top     : 130px;
-  }
 
   .bold-text-white {
       font-family: 'NotoSans-Bold';
@@ -526,3 +624,17 @@
           min-height: 1350px;
       }
   }
+
+  @media screen and (max-width: 650px) {
+    .contact-section {
+        min-height: 300vw;
+    }
+
+    .contact-container {
+        top     : 15vw;
+    }
+
+    .contact-row{
+        row-gap: 7vw !important;
+    }
+}
