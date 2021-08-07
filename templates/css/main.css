@@ -23,8 +23,13 @@
       --working-area-width: 1400px;
       --font-very-large   : 114pt;
       --font-large        : 46pt;
+      --font-medium       : 40pt;
+      --font-small        : 20pt;
+      --font-button       : 15pt;
+      --font-very-small   : 13pt;
   }
 
+  /* laptop */
   @media screen and (max-width: 1600px) {
       :root {
           --working-area-width: 88%;
@@ -32,6 +37,17 @@
       }
   }
 
+  /* smartphone */
+  @media screen and (max-width: 650px) {
+      :root {
+          --font-very-large: 9.5vw;
+          --font-large     : 8.5vw;
+          --font-medium    : 7vw;
+          --font-small     : 5vw;
+          --font-button    : 3.5vw;
+          --font-very-small: 4vw;
+      }
+  }
 
 
 
@@ -48,7 +64,6 @@
 
   }
 
-
   .container {
       padding-right: 0 !important;
       padding-left : 0 !important;
@@ -64,50 +79,27 @@
       width: 31% !important;
   }
 
-  @media screen and (max-width: 1600px) {
-      .row {
-          column-gap: none;
-          width     : 1400px;
-      }
-  }
-
-  @media screen and (max-width: 1400px) {
-      .row {
-          column-gap: none !important;
-          width     : 100% !important;
-          row-gap   : 40px !important;
-      }
-
-      .col-sm-4 {
-          width: 100% !important;
-      }
-
-      .column2 {
-          width: 46% !important;
-      }
-  }
-
   .table-title-grey {
       font-family   : 'NotoSans-Bold';
-      font-size     : 20pt;
+      font-size     : var(--font-small);
       padding-bottom: 10px;
   }
 
   .normal-text-grey {
       font-family: 'NotoSans-Regular';
-      font-size  : 13pt;
+      font-size  : var(--font-very-small);
   }
 
   .yaookButton {
       background-color: var(--azure);
-      display         : inline-block;
+      display         : table-cell;
       width           : 270px;
       height          : 60px;
       cursor          : pointer;
       color           : #ffffff;
       font-family     : 'NotoSans-Bold';
-      font-size       : 18px;
-      padding-top     : 16px;
+      font-size       : var(--font-button);
+      vertical-align  : middle;
       text-decoration : none;
       text-align      : center;
   }
@@ -124,14 +116,14 @@
 
   .yaookButton-white {
       background-color: white;
-      display         : inline-block;
+      display         : table-cell;
       width           : 270px;
       height          : 60px;
       cursor          : pointer;
       color           : var(--blue);
       font-family     : 'NotoSans-Bold';
-      font-size       : 18px;
-      padding-top     : 16px;
+      font-size       : var(--font-button);
+      vertical-align  : middle;
       text-decoration : none;
       text-align      : center;
   }
@@ -145,6 +137,48 @@
   .yaookButton-white:active {
       text-decoration: none;
   }
+
+  /* laptop */
+  @media screen and (max-width: 1600px) {
+      .row {
+          column-gap: none;
+          width     : 1400px;
+      }
+  }
+
+  /* tablet */
+  @media screen and (max-width: 1400px) {
+      .row {
+          column-gap: none !important;
+          width     : 100% !important;
+          row-gap   : 40px !important;
+      }
+
+      .col-sm-4 {
+          width: 100% !important;
+      }
+
+      .column2 {
+          width: 46% !important;
+      }
+  }
+
+  /* smartphone */
+  @media screen and (max-width: 650px) {
+      .column2 {
+          width: 100% !important;
+      }
+
+      .yaookButton, .yaookButton-white {
+          width      : 40vw;
+          height     : 10vw;
+      }
+  }
+
+
+
+
+
 
 
 
@@ -195,7 +229,22 @@
 
       .welcome-title {
           top      : 240px;
-          font-size: 40pt;
+          font-size: var(--font-medium);
+      }
+  }
+
+  @media screen and (max-width: 650px) {
+      .welcome-section {
+          min-height: 850px;
+      }
+
+      .welcome-title {
+          top      : 4em;
+          font-size: var(--font-medium);
+      }
+
+      .lifecycle-title {
+          top: 14em;
       }
   }
 
@@ -205,12 +254,6 @@
 
   .project-section {
       min-height: 600px;
-  }
-
-  @media screen and (max-width: 1400px) {
-      .project-section {
-          min-height: 900px;
-      }
   }
 
   .title-dark {
@@ -225,6 +268,29 @@
       top     : 300px;
   }
 
+  /* tablet */
+  @media screen and (max-width: 1400px) {
+      .project-section {
+          min-height: 900px;
+      }
+  }
+
+  /* smartphone */
+  @media screen and (max-width: 650px) {
+      .project-section {
+          min-height: 1020px;
+      }
+
+      .title-dark {
+          top: 10vw;
+      }
+
+      .project-container {
+          top: 20vw;
+      }
+  }
+
+
 
 
 
@@ -233,20 +299,14 @@
 
   .overview-section {
       min-height     : 1350px;
-      margin-top     : -150px;
+      margin-top     : 0;
       background     : url('../img/Husky_blue.svg') bottom -20px left 0px no-repeat;
       background-size: 30%;
   }
 
-  @media screen and (max-width: 1400px) {
-      .overview-section {
-          min-height: 1650px;
-      }
-  }
-
   .table-title-azure {
       font-family   : 'NotoSans-Bold';
-      font-size     : 20pt;
+      font-size     : var(--font-small);
       padding-top   : 5px;
       padding-bottom: 10px;
       color         : var(--azure)
@@ -269,8 +329,12 @@
       font-size  : var(--font-large);
   }
 
-
+  /* tablet */
   @media screen and (max-width: 1400px) {
+      .overview-section {
+          min-height: 1650px;
+      }
+
       .go-to-gitlab {
           position: relative;
           top     : 60px;
@@ -279,7 +343,20 @@
       .column-right {
           position: absolute;
           right   : 0;
-          width   : 450px !important;
+          width   : 430px !important;
+      }
+  }
+
+  /* smartphone */
+  @media screen and (max-width: 650px) {
+      .overview-section {
+          min-height: 2100px;
+      }
+
+      .column-right {
+          position: absolute;
+          right   : 0;
+          width   : 400px !important;
       }
   }
 
@@ -296,7 +373,7 @@
       background-position: right -100px top 30%;
   }
 
-
+  /* laptop */
   @media screen and (max-width: 1600px) {
       .partners-section {
           background-position: right -200px top 30%;
@@ -320,7 +397,7 @@
 
   .table-title-white {
       font-family   : 'NotoSans-Bold';
-      font-size     : 20pt;
+      font-size     : var(--font-small);
       padding-top   : 5px;
       padding-bottom: 10px;
       color         : white;
@@ -328,7 +405,7 @@
 
   .normal-text-white {
       font-family: 'NotoSans-Regular';
-      font-size  : 13pt;
+      font-size  : var(--font-very-small);
       color      : white;
   }
 
@@ -421,6 +498,7 @@
       color          : #ffffff;
       font-family    : 'NotoSans-Regular';
       text-decoration: none;
+      font-size      : var(--font-very-small);
   }
 
   .whiteLink:hover {
@@ -439,7 +517,7 @@
 
   .bold-text-white {
       font-family: 'NotoSans-Bold';
-      font-size  : 13pt;
+      font-size  : var(--font-very-small);
       color      : white;
   }
 
