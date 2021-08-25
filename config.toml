@@ -1,11 +1,10 @@
-baseURL = 'http://example.org/'
-languageCode = "be"
+languageCode = "en"
 theme = "exampleTheme"
-defaultContentLanguage = 'be'
+defaultContentLanguage = 'en'
 
 [languages]
 [languages.en]
-baseURL = '/'
+baseURL = 'https://decht.github.io'
 languageName = 'English'
 title = 'My new Hugo Page'
 weight = 2
@@ -30,7 +29,7 @@ weight = 2
 
 
 [languages.be]
-baseURL = '/'
+baseURL = 'https://decht.github.io/be'
 languageName = 'Беларуская'
 title = 'Мая новая старонка Hugo'
 weight = 1
