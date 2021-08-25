@@ -1,0 +1,53 @@
+baseURL = 'http://example.org/'
+languageCode = "be"
+theme = "exampleTheme"
+defaultContentLanguage = 'be'
+
+[languages]
+[languages.en]
+baseURL = '/'
+languageName = 'English'
+title = 'My new Hugo Page'
+weight = 2
+
+[languages.en.menu]
+  [[languages.en.menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "Posts"
+    pre = "pen-tool"
+    url = "/posts/"
+    weight = 2
+  [[languages.en.menu.main]]
+    name = "Tags"
+    pre = "tag"
+    url = "/tags/"
+    weight = 3
+
+
+
+[languages.be]
+baseURL = '/'
+languageName = 'Беларуская'
+title = 'Мая новая старонка Hugo'
+weight = 1
+
+[languages.be.menu]
+  [[languages.be.menu.main]]
+    name = "Галоўная"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[languages.be.menu.main]]
+    name = "Артыкулы"
+    pre = "pen-tool"
+    url = "/posts/"
+    weight = 2
+  [[languages.be.menu.main]]
+    name = "Цэтлікі"
+    pre = "tag"
+    url = "/tags/"
+    weight = 3
