@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Rokkitt';
+    src        : url('rokkitt.regular.ttf')
+}
+
+@font-face {
+    font-family: 'Lato';
+    src        : url('Lato-Regular.ttf')
+}
+
+
 html,
 body,
 div,
