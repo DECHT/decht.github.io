@@ -1,0 +1,617 @@
+@font-face {
+    font-family: 'NotoSans-Bold';
+    src: url('../fonts/NotoSans-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'NotoSans-Regular';
+    src: url('../fonts/NotoSans-Regular.ttf')
+}
+
+.language-picker {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: #fff
+}
+
+.language-picker ul {
+    list-style-type: none;
+    margin: 0;
+    padding: .5em
+}
+
+.language-picker li {
+    display: block;
+    padding: 0;
+    margin: 0
+}
+
+.language-picker a,
+.language-picker a:visited,
+.language-picker a:hover,
+.language-picker a:active,
+.language-picker span {
+    color: #3c3c3c
+}
+
+.working-area {
+    width: 1340px;
+    height: fit-content;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    color: #3c3c3c
+}
+
+.container {
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 100%
+}
+
+.col-sm-4.column-right {
+    margin-left: 66.66667%
+}
+
+.table-title-grey {
+    font-family: 'NotoSans-Bold';
+    font-size: 20pt;
+    padding-bottom: 10px
+}
+
+.normal-text-grey {
+    font-family: 'NotoSans-Regular';
+    font-size: 14pt
+}
+
+.yaookButton {
+    background-color: #01dfd7;
+    display: table-cell;
+    width: 270px;
+    height: 60px;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'NotoSans-Bold';
+    font-size: 15pt;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center
+}
+
+.yaookButton:hover {
+    background-color: #01DFD7;
+    color: #fff;
+    text-decoration: none
+}
+
+.yaookButton:active {
+    text-decoration: none
+}
+
+.yaookButton-white {
+    background-color: #fff;
+    display: table-cell;
+    width: 270px;
+    height: 60px;
+    cursor: pointer;
+    color: #01DFD7;
+    font-family: 'NotoSans-Bold';
+    font-size: 15pt;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    border: 4px solid #fff
+}
+
+.yaookButton-white:hover {
+    background-color: #01dfd7;
+    color: #fff;
+    text-decoration: none
+}
+
+.yaookButton-white:active {
+    text-decoration: none
+}
+
+.welcome-section {
+    min-height: 700px;
+    max-height: 1000px;
+    width: 100%;
+    height: fit-content;
+    background-color: #01dfd7;
+    margin: 0 auto;
+}
+
+.welcome-section .working-area {
+    background-image: url(../img/apotheke-logo.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center 0
+}
+
+img.center {
+    display: block;
+    margin: 10px auto
+}
+
+.welcome-section .working-area {
+    padding-top: 260px
+}
+
+.welcome-title {
+    font-family: 'NotoSans-Bold';
+    color: #fff;
+    font-size: 82pt
+}
+
+.lifecycle-title span {
+    background-color: #01DFD7;
+    font-family: 'NotoSans-Bold';
+    font-size: 46pt
+}
+
+.button-wrap {
+    margin: 1.5em 0
+}
+
+.project-section {
+    min-height: 900px
+}
+
+.project-section .working-area {
+    padding-top: 160px
+}
+
+.title-dark {
+    font-family: 'NotoSans-Bold';
+    font-size: 46pt
+}
+
+.project-container {
+    margin-top: 120px
+}
+
+.overview-section {
+    min-height: 1200px;
+    margin-top: 0;
+}
+
+.table-title-azure {
+    font-family: 'NotoSans-Bold';
+    font-size: 20pt;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #01dfd7
+}
+
+.overview-section .working-area {
+    margin-top: 60px
+}
+
+.overview-container {
+    margin-top: 120px
+}
+
+.go-to-gitlab {
+    margin-top: 160px
+}
+
+.title-right-dark {
+    margin-bottom: 30px;
+    font-family: 'NotoSans-Bold';
+    font-size: 46pt
+}
+
+.button-describing {
+    margin-top: 1.5em
+}
+
+.partners-section {
+    min-height: 1000px;
+    background-image: url('../img/Husky-white-cut.svg');
+    background-repeat: no-repeat;
+    background-size: 800px 1000px;
+    background-color: #01dfd7;
+    background-position: right -100px bottom -35%;
+    padding-bottom: 3em
+}
+
+.partners-section .working-area {
+    padding-top: 180px
+}
+
+.title-white {
+    font-family: 'NotoSans-Bold';
+    font-size: 46pt;
+    color: #fff
+}
+
+.table-title-white {
+    font-family: 'NotoSans-Bold';
+    font-size: 20pt;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #fff
+}
+
+.normal-text-white {
+    font-family: 'NotoSans-Regular';
+    font-size: 14pt;
+    color: #fff
+}
+
+.contact-group {
+    display: flex;
+    padding-right: 33.3333%
+}
+
+.contact-group.wide {
+    padding-right: 0
+}
+
+.contact-entity {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5em;
+    flex: 1 1 33.33333%
+}
+
+.contact-entity:first-child {
+    margin-left: 0
+}
+
+.contact-entity:last-child {
+    margin-right: 0
+}
+
+.contact-entity>h3 {
+    flex: 0 0 auto
+}
+
+.contact-entity>div {
+    flex: 0 0 auto
+}
+
+.contact-entity>div.filler {
+    flex: 1 1 auto
+}
+
+.contact-entity>.paragraphy {
+    margin-bottom: 1.5em
+}
+
+.contact-entity .placeholder-h4 {
+    padding-top: 37.4px;
+    margin-bottom: .5rem
+}
+
+.contact-entity .placeholder-h3 {
+    padding-top: 47px;
+    margin-bottom: .5rem
+}
+
+.contact-entity h4 {
+    font-family: 'NotoSans-Bold';
+    font-size: 14pt;
+    color: #fff
+}
+
+.lifecycle-management-section {
+    min-height: 1080px;
+    margin-bottom: 90px
+}
+
+.lifecycle-management-section .working-area {
+    padding-top: 130px
+}
+
+.big-title-dark {
+    font-family: 'NotoSans-Bold';
+    font-size: 114pt;
+    line-height: 115%
+}
+
+.lifecycle-management-container {
+    margin-top: 100px
+}
+
+.get-in-touch-section {
+    min-height: 465px;
+    width: 100%;
+    background-image: url(../img/winter2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 20px solid #01dfd7
+}
+
+.get-in-touch-section .working-area {
+    padding-top: 90px
+}
+
+.get-in-touch-container {
+    margin-top: 100px
+}
+
+.job-section {
+    margin-bottom: 130px
+}
+
+.job-section .working-area {
+    padding-top: 130px
+}
+
+.contact-section {
+    min-height: 600px;
+    background-color: #01dfd7
+}
+
+.contact-section .working-area {
+    padding-top: 130px
+}
+
+.whiteLink {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'NotoSans-Regular';
+    text-decoration: none;
+    font-size: 14pt
+}
+
+.whiteLink:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.whiteLink:active {
+    text-decoration: none
+}
+
+.bold-text-white {
+    font-family: 'NotoSans-Bold';
+    font-size: 14pt;
+    color: #fff
+}
+
+.footer-columns {
+    display: flex;
+    font-family: 'NotoSans-Regular'
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    flex: 1 1 30%;
+    font-size: 14pt;
+    margin: 0 1.5em
+}
+
+.footer-column:first-child {
+    margin-left: 0
+}
+
+.footer-column:last-child {
+    margin-right: 0
+}
+
+.footer-column>* {
+    flex: 0 0 auto
+}
+
+.footer-column>div {
+    margin-bottom: 1.5em
+}
+
+.footer-column>.push {
+    flex: 1 1 1px;
+    margin: 0
+}
+
+.footer-column>.final {
+    min-height: 84pt
+}
+
+.footer-column .placeholder-h4 {
+    padding-top: 37.4px;
+    margin-bottom: .5rem
+}
+
+.footer-column .placeholder-h3 {
+    padding-top: 47px;
+    margin-bottom: .5rem
+}
+
+.footer-column h3 {
+    font-family: 'NotoSans-Bold';
+    font-size: 20pt;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 10px
+}
+
+.footer-column h4 {
+    font-family: 'NotoSans-Bold';
+    font-size: 14pt;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 10px
+}
+
+.footer-column h5 {
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding: 0
+}
+
+.footer-column .fakepar {
+    margin: 0
+}
+
+.footer-column a,
+.footer-column a:hover,
+.footer-column a:visited,
+.footer-column a:active,
+.footer-column a:focus {
+    text-decoration: none;
+    color: #fff;
+    font-size: inherit
+}
+
+.copyright {
+    margin-top: 3em;
+    margin-bottom: 3em
+}
+
+@media screen and (max-width: 1536px) {
+    .partners-section {
+        background-size: 600px 750px;
+        background-position: right -50px bottom -10px
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .partners-section {
+        background-size: 400px 500px;
+        background-position: right -50px bottom -10px
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .working-area {
+        width: auto;
+        margin-left: 1.5em;
+        margin-right: 1.5em
+    }
+
+    .overview-section .working-area {
+        margin-top: 120px
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container .col-sm-4 {
+        width: 100%;
+        margin-top: 3em;
+        margin-bottom: 3em
+    }
+
+    .container .col-sm-4.linearize-slim {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em
+    }
+
+    .contact-group,
+    .contact-entity {
+        display: block;
+        margin: 3em 0;
+        padding: 0
+    }
+
+    .partners-section .working-area {
+        padding-bottom: 400px
+    }
+
+    .col-sm-4.column-right {
+        margin-left: 0
+    }
+
+    .go-to-gitlab {
+        margin-top: 0;
+        margin-bottom: 240px
+    }
+
+    .overview-section {
+        background-size: 300px
+    }
+
+    #empty-cell {
+        display: none
+    }
+
+    .footer-columns {
+        display: block
+    }
+
+    .placeholder-h3,
+    .placeholder-h4 {
+        display: none
+    }
+
+    .footer-column {
+        display: block;
+        margin: 0 0
+    }
+
+    .footer-column>.final {
+        min-height: 0
+    }
+}
+
+@media screen and (max-width: 786px) {
+
+    .table-title-grey,
+    .table-title-azure,
+    .table-title-white,
+    .normal-text-white,
+    .footer-column h3 {
+        font-size: 5vw
+    }
+
+    .normal-text-grey,
+    .whiteLink,
+    .bold-text-white,
+    .footer-column h4,
+    .footer-column {
+        font-size: 4vw
+    }
+
+    .yaookButton,
+    .yaookButton-white {
+        font-size: 3.5vw
+    }
+
+    .welcome-title,
+    .lifecycle-title span,
+    .title-dark,
+    .title-right-dark,
+    .title-white {
+        font-size: 8vw
+    }
+
+    .big-title-dark {
+        font-size: 9.5vw
+    }
+
+    .get-in-touch-section .working-area {
+        padding-top: 45px
+    }
+
+    .get-in-touch-container {
+        margin-top: 8px
+    }
+
+    .footer-column .placeholder-h3 {
+        padding-top: calc(5px + $sfont-small * 1.2 + 10px)
+    }
+
+    .footer-column .placeholder-h3 {
+        padding-top: calc(5px + $sfont-very-small * 1.2 + 10px)
+    }
+
+    .overview-section .overview-container {
+        margin-top: 60px
+    }
+
+    .language-picker .fold {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        top: -100px
+    }
+}

@@ -1,0 +1,137 @@
+alasca:
+  alasca: ALASCA
+  descriptionPart1:
+    Im September 2022 fand Yaook sein neues Zuhause bei ALASCA –
+    einem gemeinnützigen Verein für betriebsfähige und offene Cloud-Infrastrukturen.
+    Die Mission von ALASCA
+    dreht sich um die Weiterentwicklung und Bereitstellung von Open-Source Tools,
+    die den Aufbau und Betrieb eigener Cloud-Infrastrukturen nicht nur ermöglichen,
+    sondern auch erleichtern.
+  descriptionPart2:
+    Neben der praktischen Entwicklungsarbeit an diesen Projekten
+    versteht sich ALASCA auch als Vermittler von Wissen rund um diese Themen –
+    nicht nur innerhalb des Vereins,
+    sondern auch nach außen hin,
+    wie beispielsweise in Form der ALASCA Tech-Talks.
+  descriptionPart3:
+    Mit einer starken, motivierten Community
+    und der geballten Kompetenz der Vereinsmitglieder
+    treibt ALASCA die digitale Souveränität in Deutschland und Europa damit nachhaltig voran –
+    auch in Zusammenarbeit mit weiteren Open-Source-Initiativen und -Communities der digitalen Branche.
+  imprintLink: https://alasca.cloud/impressum/
+  privacyLink: https://alasca.cloud/datenschutz/
+  project: Ein Projekt von ALASCA.
+  title: ALASCA – Verband für offene, betriebsfähige Cloud-Infrastrukturen e.V.
+  yaookProjectLink: https://alasca.cloud/projects/yaook/
+  websiteLink: https://alasca.cloud/
+contact:
+  aboutYaook: Über Yaook
+  contact: Kontakt
+  editor: Redaktion
+  euLogo: <div class="eu-logo-german col-auto my-auto"></div>
+  euSupport: Von April 2020 bis Juni 2022
+    erhielt Cloud&Heat Technologies, Gründungsmitglied von ALASCA,
+    für dieses Projekt finanzielle Unterstüzung von der Europäischen Union.
+  imprint: Impressum
+  jointProject: Gemeinsames Projekt und Auftritt von Cloud&amp;Heat Technologies und
+    Schwarz IT KG.
+  privacyPolicy: Datenschutz
+getintouch:
+  calendarSubscription: You can also subscribe to our calendar via .ics-file.
+  chat: Chat.
+  chatInfo: '
+    Wenn du Fragen hast oder einfach Hallo sagen möchtest, komm gern in unseren Chat.
+    Der Hauptkanal heißt #yaook im OFTC (IRC) Netzwerk.
+    <b>Bitte beachte</b>, dass es für Yaook/Kubernetes einen separaten Channel (#yaook-k8s) gibt.
+    '
+  joinFortnightly: zum Fortnightly
+  joinShoreLeave: zum Shore Leave
+  meetingFortnightly: Yaook/Operator (“Fortnightly”)
+  meetingShoreLeave: Yaook/Kubernetes (“Shore Leave”)
+  meetings: Meetings.
+  meetingsIntro: Unsere Community trifft sich wöchentlich bzw. alle zwei Wochen,
+    um den aktuellen Stand der Arbeit, offene Fragen und
+    alle anderen Dinge im Zusammenhang mit der Entwicklung von Yaook zu besprechen.
+    Wir haben separate Meetings für den Yaook/Operator und Yaook/Kubernetes.
+  timeFortnightly: '
+    · Do., 14 - 14:30 Uhr (Europe/Berlin TZ)<br>
+    · alle zwei Wochen
+    '
+  timeShoreLeave: '
+    · Do., 14:30 - 15 Uhr (Europe/Berlin TZ)<br>
+    · wöchentlich
+    '
+job:
+  atCH: Bei Cloud&amp;Heat
+  atStackit: Bei STACKIT
+  excitingProject: 'Ein spannendes Projekt, eine gemeinsame Zukunft, zwei Karrieremöglichkeiten:
+    werde Teil von STACKIT oder Cloud&Heat und erweitere das Team als YAOOK DevOps
+    Engineer (m/w/d)!'
+  job: 'Job? <br> Werde <a style="color: #7acaef">YAOOK</a>-DevOps-Engineer.'
+langSwitcher: '<li>🇩🇪<span class="fold"> Deutsch</span></abbr></li><li><a href="index.html">🇬🇧<span
+  class="fold"> English</span></a></li> '
+lifecycle:
+  forOpenstack: für OpenStack
+  openstackInfo: OpenStack ist eine freie, auf offenen Standards basierende Cloud-Computing-Plattform.
+    Es wird hauptsächlich als Infrastructure-as-a-Service (IaaS) sowohl in öffentlichen
+    als auch in privaten Clouds bereitgestellt, in denen virtuelle Server und andere
+    Ressourcen den NutzerInnen zur Verfügung gestellt werden.
+overview:
+  goDocs: Hier geht es zur Dokumentation und zum Quellcode von Yaook.
+  goGitlab: Geh zu GitLab.
+  kubernetesInfo: Dient dem Bereitstellen und Verwalten von Kubernetes unter OpenStack.
+    Upgrades von Kubernetes werden transparent verarbeitet und ein voll funktionsfähiges
+    Kubernetes-Cluster (mit LoadBalancern, Ingresses, StorageClasses, Zertifikaten
+    und weiteren relevanten Komponenten) wird zur Verfügung gestellt.
+  kubernetesTitle: YAOOK Kubernetes
+  metalInfo: Ermöglicht das Bereitstellen und Verwalten der Server-Hardware ("Metal-as-a-Service").
+    Dies umfasst die Bereitstellung des Betriebssystems, welches auf den Servern läuft,
+    sowie deren Netzwerk- und Festplattenkonfiguration. Es ermöglicht die automatisierte
+    Neuinstallation von Servern, was unser primärer Mechanismus für Software-Updates
+    ist.
+  metalTitle: YAOOK Bare Metal
+  operatorInfo: Realisiert die Inbetriebnahme und das Verwalten von OpenStack auf
+    Kubernetes. Der Operator kommuniziert mit den Standard-Kubernetes-APIs, um Ressourcen
+    im Cluster zu erstellen und zu verwalten. Dieser führt Upgrades durch, kümmert
+    sich um die Wartung von OpenStack (z.B. Evakuieren von Netzwerkknoten) und bietet
+    eine Schnittstelle, über die die BenutzerInnen die Konfiguration festlegen können.
+  operatorTitle: YAOOK Operator
+  overview: Überblick.
+partners:
+  chHistory1: Seit seiner Gründung im Jahr 2011 besteht die Mission von Cloud&amp;Heat
+    darin, Nachhaltigkeit und Sicherheit zu einem Motor der digitalen Innovation zu
+    machen. Das Dresdner Unternehmen entwickelt, baut und betreibt sichere und energieeffiziente
+    digitale Infrastrukturen, die den Anforderungen der digitalen Zukunft gerecht
+    werden.
+  chHistory2: Cloud&amp;Heat betreibt seit mehreren Jahren OpenStack-basierte Cloud-Infrastrukturen.
+    Das gewonnene Wissen und die Erfahrungen sind wesentliche Basis bei der Entwicklung
+    von Yaook.
+  partners: Partner.
+  stackitHistory1: STACKIT ist die digitale Marke der Schwarz IT und damit Teil der
+    IT-Organisation von Europas größter Handelsgruppe, zu der Lidl, Kaufland sowie
+    Unternehmen aus dem Bereich Produktion und Wertstoffmanagement gehören.
+  stackitHistory2: Das Unternehmen bietet Colocation in Form von Rechenzentrums- oder
+    Rackspace sowie Cloud-Infrastruktur- und Plattform-Services (IaaS und PaaS) in
+    Enterprise-Qualität. STACKIT liefert die technologische Basis für die digitale
+    Transformation der Schwarz Gruppe, von der künftig auch externe Unternehmen profitieren
+    sollen.
+project:
+  docs: Dokumentation
+  openSource: Open Source.
+  scope: Anwendungsbereich von YAOOK.
+  sourceCode: Quellcode
+  sovereignty: Yaook ist ein wichtiger Schritt zu mehr digitaler Souveränität. Es
+    ermöglicht den Aufbau und den Betrieb von eigenen Cloud-Infrastrukturen auf Open-Source-Basis.
+    Dafür bietet Yaook ein vollständig automatisiertes und freies OpenStack Lifecycle
+    Management (LCM). Der Fokus liegt dabei nicht allein auf der Bereitstellung des
+    OpenStack, sondern auf allen Aspekten, die für das Management von OpenStack-basierten
+    Infrastrukturen relevant sind (z.B. Hardwareinventur, Monitoring). Auch Werkzeuge
+    für Day-2-Operations werden adressiert.
+  theProject: Das Projekt.
+welcome:
+  lifecycle: Dem Lifecycle Management Tool für OpenStack.
+  welcome: Willkommen bei YAOOK.
+yaook:
+  title: Das Lifecycle-Management-Tool für OpenStack
+  helpShape: Yaook mitgestalten
+

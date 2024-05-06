@@ -1,0 +1,294 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="static/img/Husky_blue.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="static/img/Husky-logo.png">
+  <link href="static/css/bootstrap.css" rel="stylesheet">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="static/css/main-20210901.css">
+  <meta name="description" content="Yaook is a Lifecycle Management Tool for OpenStack based on Kubernetes.">
+  <title>Yaook</title>
+</head>
+
+<body class="main-layout">
+
+  <!-- welcome-section -->
+  <div class="welcome-section">
+    <div class="working-area">
+      <h1 class="welcome-title" data-t>welcome.welcome</h1>
+      <div class="lifecycle-title">
+        <span data-t>welcome.lifecycle</span>
+      </div>
+      <div class="language-picker"><ul data-t>langSwitcher</ul></div>
+    </div>
+  </div>
+
+
+  <!-- project-section -->
+  <div class="project-section">
+    <div class="working-area">
+      <h2 class="title-dark" data-t>project.theProject</h2>
+      <div class="container project-container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3 class="table-title-grey" data-t>project.scope</h3>
+            <div class="normal-text-grey">
+              <p data-t>project.sovereignty</p>
+            </div>
+          </div>
+          <div class="col-sm-4 linearize-slim">
+            <h3 class="table-title-grey" data-t>project.openSource</h3>
+            <!--<div class="button-wrap"><a href="mailto:info@yaook.cloud" class="yaookButton">info@yaook.cloud</a></div>-->
+            <div class="button-wrap">
+              <a target="_blank" href="https://docs.yaook.cloud" class="yaookButton" data-t>project.docs</a>
+            </div>
+          </div>
+          <div class="col-sm-4 linearize-slim">
+            <h3 class="table-title-grey" id="empty-cell">&nbsp;</h3>
+            <!--<div class="button-wrap">
+              <a href="https://webchat.oftc.net/?channels=yaook" class="yaookButton">#yaook on OFTC</a>
+            </div>-->
+            <div class="button-wrap"><a target="_blank" href="https://gitlab.com/yaook" class="yaookButton docs-button" data-t>project.sourceCode</a></div>
+            <!--
+            <h3 class="table-title-grey">Look at the code.</h3>
+
+            <div class="button-wrap">
+              <a href="https://docs.yaook.cloud" class="yaookButton">Docs</a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="line-yaook-husky"></div>
+
+
+  <!-- overview-section -->
+  <div class="overview-section">
+    <div class="working-area">
+      <h2 class="title-dark" data-t>overview.overview</h2>
+      <div class="container overview-container">
+        <div class="row">
+
+          <div class="col-sm-4">
+            <div class="husky-table"></div>
+            <h3 class="table-title-azure" data-t>overview.metalTitle</h3>
+            <div class="normal-text-grey">
+              <p data-t>overview.metalInfo</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="husky-table"></div>
+            <h3 class="table-title-azure" data-t>overview.kubernetesTitle</h3>
+            <div class="normal-text-grey">
+              <p data-t>overview.kubernetesInfo</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="husky-table"></div>
+            <h3 class="table-title-azure" data-t>overview.operatorTitle</h3>
+            <div class="normal-text-grey">
+              <p data-t>overview.operatorInfo</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <!-- <div class="col-sm-4 linearize-remove"></div>
+          <div class="col-sm-4"></div> -->
+          <div class="col-sm-4 column-right">
+            <div class="go-to-gitlab">
+              <h2 class="title-right-dark"data-t>overview.goGitlab</h2>
+              <h3 class="normal-text-grey button-describing">
+                <p data-t>overview.goDocs</p>
+              </h3>
+              <div class="button-wrap"><a target="_blank" href="https://docs.yaook.cloud" class="yaookButton docs-button" data-t>project.docs</a></div>
+              <div class="button-wrap"><a target="_blank" href="https://gitlab.com/yaook" class="yaookButton docs-button" data-t>project.sourceCode</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- alasca-section -->
+    <div class="alasca-section">
+      <div class="working-area">
+        <h2 class="title-white" data-t>alasca.project</h2>
+        <div class="container project-container">
+          <div class="contact-group">
+              <div class="contact-entity">
+                  <div class="normal-text-white">  
+                      <div class="row">
+                        <div class="col-sm-4"><img src="static/img/alasca-logo-white.png" width="100%"></div>
+                        <div class="col-sm-8">
+                          <p data-t>alasca.descriptionPart1</p>
+                          <p data-t>alasca.descriptionPart2</p>
+                        </div>
+                      </div>
+                      <p data-t>alasca.descriptionPart3</p>
+                  </div>
+                  <div class="filler"></div>
+                  <div>
+                    <a class="yaookButton-white" target="_blank" data-attr-t href-t=alasca.websiteLink data-t>alasca.alasca</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- lifecycle-management-section -->
+  <div class="lifecycle-management-section">
+    <div class="working-area">
+      <h2 class="big-title-dark">Lifecycle Management Tool.</h2>
+      <div class="container lifecycle-management-container">
+        <div class="row">
+
+          <div class="col-sm-4">
+            <h3 class="table-title-grey" data-t>lifecycle.forOpenstack</h3>
+            <br>
+            <div><a target="_blank" href="https://www.openstack.org" class="yaookButton">OpenStack</a></div>
+            <br>
+            <br>
+            <div class="normal-text-grey">
+              <p data-t>lifecycle.openstackInfo</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- get-in-touch-section -->
+  <div class="get-in-touch-section">
+    <div class="working-area">
+      <h2 class="title-dark get-in-touch-title" data-t>getintouch.meetings</h2>
+      <div class="container get-in-touch-container">
+        <div class="row">
+
+          <div class="col-sm-4 linearize-slim">
+            <h3 class="normal-text-grey" data-t>getintouch.meetingsIntro</h3>
+          </div>
+
+          <div class="col-sm-4 linearize-slim">
+            <h3 class="bold-text-grey" data-t>getintouch.meetingFortnightly</h3>
+            <h3 class="normal-text-grey" data-t>getintouch.timeFortnightly</h3>
+            <div style="padding-top: 10px;"><a href="https://bbb.cloudandheat.com/rooms/xjh-byv-scr-2zz/join" class="yaookButton"data-t>getintouch.joinFortnightly</a></div>
+          </div>
+
+          <div class="col-sm-4 linearize-slim">
+            <h3 class="bold-text-grey" data-t>getintouch.meetingShoreLeave</h3>
+            <h3 class="normal-text-grey" data-t>getintouch.timeShoreLeave</h3>
+            <div style="padding-top: 10px;"><a target="_blank" href="https://bbb.cloudandheat.com/rooms/ntr-n2c-j1c-ayz/join" class="yaookButton" data-t>getintouch.joinShoreLeave</a></div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="title-dark get-in-touch-title" data-t>getintouch.chat</h2>
+      <div class="container get-in-touch-container">
+        <div class="row">
+          <div class="col-sm-11 linearize-slim">
+            <h3 class="normal-text-grey" data-t>getintouch.chatInfo</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 linearize-slim">
+            <div style="padding-top: 10px;"><a target="_blank" href="https://webchat.oftc.net/?channels=yaook" class="yaookButton">via OFTC (IRC) webchat</a></div>
+          </div>
+
+          <div class="col-sm-4 linearize-slim">
+            <div style="padding-top: 10px;"><a href="xmpp:#yaook%irc.oftc.net@irc.jabberfr.org?join" class="yaookButton">via Jabber/XMPP</a></div>
+          </div>
+
+          <div class="col-sm-4 linearize-slim">
+            <div style="padding-top: 10px;"><a href="https://matrix.to/#/#_oftc_#yaook:matrix.org" class="yaookButton">via Matrix</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- contact-section -->
+    <div class="contact-section">
+        <div class="working-area">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h2 class="table-title-white">Yaook</h2>
+                    <h3 class="bold-text-white" data-t>yaook.title</h3>
+                    <!--<p role="doc-subtitle" class="bold-text-white font-small" data-t></p>-->
+                    <div>
+                      <div><a target="_blank" data-attr-t href-t=alasca.yaookProjectLink data-t>contact.aboutYaook</a></div>
+                      <div><a href="mailto:info@yaook.cloud">E-mail: info@yaook.cloud</a></div>
+                      <p><a target="_blank" href=https://gitlab.com/yaook/meta/-/wikis/home data-t>yaook.helpShape</a></p>
+                      <div><a target="_blank" data-attr-t href-t=alasca.privacyLink data-t>contact.privacyPolicy</a></div>
+                      <div><a target="_blank" data-attr-t href-t=alasca.imprintLink data-t>contact.imprint</a></div>
+                    </div>
+                    <!--
+                    <div class="push"></div>
+                    -->
+                </div>
+                <div class="footer-column">
+                    <h2 class="table-title-white" data-t>contact.contact</h2>
+                    <h3 class="bold-text-white" data-t>alasca.title</h3>
+                    <div>
+                        <div><addr>
+                        c/o Cloud&Heat Technologies GmbH<br>
+                        Zeitenströmung – Halle 15<br>
+                        Königsbrücker Straße 96<br>
+                        01099 Dresden<br>
+                        Germany</addr></div>
+                    </div>
+                    <!--
+                    <div class="push"></div>
+                    -->
+                    <div class="final">
+                        <div><a href="mailto:hello@alasca.cloud">E-mail: hello@alasca.cloud</a></div>
+                        <div><a target="_blank" data-attr-t href-t=alasca.websiteLink>Website: alasca.cloud</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright row">
+              <div class="footer-columns">
+
+                <div class="footer-column">
+                  <div class="husky-copyright col-auto my-auto"></div>
+                  <div class="normal-text-white copyright-text col-auto my-auto">
+                    <a>Copyright 2020-2024, Yaook.</a>
+                  </div>
+                </div>
+                
+                <!-- eu support: text and logo
+                <div class="footer-column">
+                  <div class="normal-text-white copyright-text col-auto my-auto text-end">
+                    <a data-t>contact.euSupport</a>
+                  </div>
+                </div>
+                
+                
+                <div class="footer-column" data-t>contact.euLogo</div>
+                -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+Noto Sans Regular = für Lauftext, Impressum, 
+Noto Sans Bold = für Überschriften

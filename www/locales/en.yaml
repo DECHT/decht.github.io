@@ -1,0 +1,123 @@
+alasca:
+  alasca: ALASCA
+  descriptionPart1: In September 2022,
+    Yaook found its new home at ALASCA –
+    a non-profit association for operational and open cloud infrastructures.
+    ALASCA's mission revolves around the ongoing development and provision of open-source tools
+    that not only enable but also facilitate the deployment and operation of cloud infrastructures.
+  descriptionPart2: In addition to the practical development work on these projects,
+    ALASCA also envisions itself as a provider of knowledge around these topics 
+    not only within the association,
+    but also externally, as for example with the ALASCA Tech-Talks.
+  descriptionPart3:  With a strong, motivated community and the joint competence of the association's members,
+    ALASCA is driving digital sovereignty in Germany and Europe forward in a sustainable way –
+    including collaboration with other open-source initiatives and communities in the digital industry.
+  imprintLink: https://alasca.cloud/en/imprint/
+  privacyLink: https://alasca.cloud/en/data-protection/
+  project: A project of ALASCA.
+  title: ALASCA – Association for Operational, Open Cloud Infrastructures e.V.
+  yaookProjectLink: https://alasca.cloud/en/projects/yaook/
+  websiteLink: https://alasca.cloud/en/
+contact:
+  aboutYaook: About Yaook
+  contact: Contact
+  editor: Edited by
+  euLogo: <div class="eu-logo col-auto my-auto"></div>
+  euSupport: From April 2020 to June 2022,
+    Cloud&Heat Technologies, a founding member of ALASCA,
+    received financial support from the European Union for this project.
+  imprint: Imprint
+  jointProject: Joint project of Cloud&amp;Heat Technologies GmbH and Schwarz IT KG.
+  privacyPolicy: Privacy Policy
+getintouch:
+  calendarSubscription: You can also subscribe to our calendar via .ics-file.
+  chat: Chat.
+  chatInfo: '
+    If you have questions or simply want to say Hi, you can also join our chat rooms.
+    The main channel is #yaook on the OFTC (IRC) network.
+    <b>Note:</b> There is a separate, dedicated channel #yaook-k8s for our Yaook/Kubernetes.
+    '
+  joinFortnightly: Join Fortnightly
+  joinShoreLeave: Join Shore Leave
+  meetingFortnightly: Yaook/Operator (“Fortnightly”)
+  meetingShoreLeave: Yaook/Kubernetes (“Shore Leave”)
+  meetings: Meetings.
+  meetingsIntro: Our community meets weekly/bi-weekly for discussing their current state of work as well as issues and
+    all other things related to the development of Yaook.
+    We have separate meetings for the Yaook/Operator and Yaook/Kubernetes.
+  timeFortnightly: '
+    · Thu, 2.00 - 2.30 pm (Europe/Berlin TZ)<br>
+    · fortnightly
+    '
+  timeShoreLeave: '
+    · Thu, 2.30 - 3.00 pm (Europe/Berlin TZ)<br>
+    · weekly
+    '
+job:
+  atCH: At Cloud&amp;Heat
+  atStackit: At STACKIT
+  excitingProject: One exciting project, one joint future, two career choices — become
+    part of the STACKIT and Cloud&amp;Heat team and join as an YAOOK DevOps Engineer
+    (m/f/d)!
+  job: 'Job? <br> Become a <a style="color: #7acaef">YAOOK</a> developer.'
+langSwitcher: <li><a href="index.de.html">🇩🇪<span class="fold"> Deutsch</span></abbr></a></li><li>🇬🇧<span
+  class="fold"> English</span></li>
+lifecycle:
+  forOpenstack: for OpenStack
+  openstackInfo: OpenStack is a free, open standard Cloud computing platform. It is
+    mostly deployed as Infrastructure-as-a-Service (IaaS) in both public and private
+    Clouds where virtual servers and other resources are made available to users.
+overview:
+  goDocs: Go to the documentation and source code of Yaook.
+  goGitlab: Go to GitLab.
+  kubernetesInfo: Deploys and manages the Kubernetes below OpenStack. It handles Kubernetes
+    upgrades transparently and provides a full-featured Kubernetes cluster with LoadBalancers,
+    Ingresses, StorageClasses, Certificates and further relevant pieces.
+  kubernetesTitle: YAOOK Kubernetes
+  metalInfo: Deploys and manages server hardware (“Metal-as-a-Service”). This includes
+    defining and building the operating system running on the servers as well as their
+    network and disk configuration. It allows to automatically redeploy nodes, which
+    is our primary mechanism for software updates.
+  metalTitle: YAOOK Bare Metal
+  operatorInfo: Deploys and manages OpenStack on top of Kubernetes. It talks to the
+    standard Kubernetes APIs to create and manage resources in the cluster. It handles
+    OpenStack upgrades and maintenance (such as evacuating nodes) and provides an
+    interface for the user to insert configuration.
+  operatorTitle: YAOOK Operator
+  overview: Overview.
+partners:
+  chHistory1: Since its foundation in 2011, the mission of Cloud&amp;Heat has been
+    to make sustainability and security a driver of digital innovation. Cloud&amp;Heat
+    develops, builds, and operates secure and energy-efficient digital infrastructures
+    that meet the requirements of the digital future.
+  chHistory2: Cloud&amp;Heat has been operating OpenStack-based Cloud infrastructures for
+    several years. The gained knowledge and experiences form essential ingredients
+    for Yaook's development.
+  partners: Partners.
+  stackitHistory1: STACKIT is the digital brand of Schwarz IT and thus part of the
+    IT organization of Europe’s largest retail group, which includes Lidl, Kaufland,
+    and companies from the production and recyclables management sectors.
+  stackitHistory2: As a corporate start-up of Schwarz IT, STACKIT offers colocation
+    in the form of data centre or rack space as well as Cloud infrastructure and platform
+    services (IaaS and PaaS) in enterprise quality. STACKIT provides the technological
+    basis for the Schwarz Group‘s digital tranformation, from which external companies
+    will also benefit in the future.
+project:
+  docs: Docs
+  openSource: Open Source.
+  scope: Scope of YAOOK.
+  sourceCode: Source code
+  sovereignty: Yaook is an important step towards more digital sovereignty. It renders
+    it possible to deploy and operate own Cloud infrastructures based on Open Source.
+    For this purpose, Yaook is providing a fully automated and free OpenStack Lifecycle
+    Management (LCM). In this context, it does not only focus on provisioning OpenStack
+    itself, but also on all other aspects relevant for managing OpenStack-based infrastructures
+    (e.g. hardware inventory, monitoring). Generic day 2 operation tasks are natively
+    included in Yaook’s scope.
+  theProject: The project.
+welcome:
+  lifecycle: The Lifecycle Management Tool for OpenStack.
+  welcome: Welcome to YAOOK.
+yaook:
+  title: The Lifecycle Management Tool for OpenStack
+  helpShape: Help shape Yaook

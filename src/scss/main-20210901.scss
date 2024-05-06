@@ -1,0 +1,1025 @@
+/***** import fonts *****/
+
+@font-face {
+    font-family: 'NotoSans-Bold';
+    src        : url('../fonts/NotoSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'NotoSans-Regular';
+    src        : url('../fonts/NotoSans-Regular.ttf');
+}
+
+ 
+$azure: #7acaef;
+$blue: #4cb4e7;
+$grey: #3c3c3c;
+$working-area-width: 1340px;
+$font-very-large: 114pt;
+$font-large: 46pt;
+$font-medium: 40pt;
+$font-small: 20pt;
+$font-button: 15pt;
+$font-very-small: 14pt;
+
+// we need this threshold to linearize the containers at the husky -- otherwise, they will reach into white
+$large-tablet-threshold: 1360px;
+$small-tablet-threshold: 1024px;
+$large-smartphone-threshold: 786px;
+
+$sfont-very-large: 9.5vw;
+$sfont-large: 8vw;
+$sfont-medium : 7vw;
+$sfont-small: 5vw;
+$sfont-button: 3.5vw;
+$sfont-very-small: 4vw;
+
+
+/* laptop */
+
+.language-picker {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: white;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    li {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    a, a:visited, a:hover, a:active, span {
+        color: $grey;
+    }
+}
+
+
+/***** common styles *****/
+
+.font-very-large {
+    font-size: $font-very-large !important;
+}
+
+.font-large {
+    font-size: $font-large !important;
+}
+
+.font-small {
+    font-size: $font-small !important;
+}
+
+.font-very-small {
+    font-size: $font-very-small !important;
+}
+
+.working-area {
+    width   : $working-area-width;
+    height  : fit-content;
+    margin  : auto auto;
+    left    : 0;
+    right   : 0;
+    color   : $grey;
+}
+
+.title-dark {
+    font-family   : 'NotoSans-Bold';
+    font-size: $font-large;
+}
+
+/* phone */
+/* @media screen and (max-width: 650px) {
+    :root {
+        --font-very-large: 9.5vw;
+        --font-large     : 8vw;
+        --font-medium    : 7vw;
+        --font-small     : 5vw;
+        --font-button    : 3.5vw;
+        --font-very-small: 4vw;
+    }
+}*/
+
+.container {
+    padding-right: 0;
+    padding-left : 0;
+    max-width    : 100%;
+}
+
+.col-sm-4.column-right {
+    margin-left: 66.666667%;
+}
+
+.table-title-grey {
+    font-family   : 'NotoSans-Bold';
+    font-size     : $font-small;
+    padding-bottom: 10px;
+}
+
+.normal-text-grey {
+    font-family: 'NotoSans-Regular';
+    font-size  : $font-very-small;
+}
+
+.bold-text-grey {
+    font-family: 'NotoSans-Bold';
+    font-size  : $font-very-small;
+}
+
+
+.yaookButton {
+    background-color: $azure;
+    display         : table-cell;
+    width           : 270px;
+    height          : 60px;
+    cursor          : pointer;
+    color           : #ffffff;
+    font-family     : 'NotoSans-Bold';
+    font-size       : $font-button;
+    vertical-align  : middle;
+    text-decoration : none;
+    text-align      : center;
+}
+
+.yaookButton:hover {
+    background-color: $blue;
+    color           : #ffffff;
+    text-decoration : none;
+}
+
+.yaookButton:active {
+    text-decoration: none;
+}
+
+.yaookButton-white {
+    background-color: white;
+    display         : table-cell;
+    width           : 270px;
+    height          : 60px;
+    cursor          : pointer;
+    color           : $blue;
+    font-family     : 'NotoSans-Bold';
+    font-size       : $font-button;
+    vertical-align  : middle;
+    text-decoration : none;
+    text-align      : center;
+    border: 4px solid white;
+}
+
+.yaookButton-white:hover {
+    background-color: $azure;
+    color           : #ffffff;
+    text-decoration : none;
+}
+
+.yaookButton-white:active {
+    text-decoration: none;
+}
+
+/* laptop */
+/* @media screen and (max-width: 1600px) {
+    .row {
+        column-gap: none;
+        width     : 1400px;
+    }
+} */
+
+/* tablet */
+/* @media screen and (max-width: 1400px) {
+    .row {
+        column-gap: none;
+        width     : 100%;
+        row-gap   : 40px;
+    }
+
+    .col-sm-4 {
+        width: 100%;
+    }
+
+    .column2 {
+        width: 46%;
+    }
+} */
+
+/* phone */
+/* @media screen and (max-width: 650px) {
+    .column2 {
+        width: 100%;
+    }
+
+    .yaookButton,
+    .yaookButton-white {
+        width : 40vw;
+        height: 10vw;
+    }
+} */
+
+
+
+
+
+
+
+
+
+/***** welcome-section *****/
+
+.welcome-section {
+    min-height       : 880px;
+    max-height       : 1200px;
+    width            : 100%;
+    height           : fit-content;
+    background-image : url(../img/winter.jpg);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    margin           : 0 auto;
+    border-bottom    : 20px solid $azure;
+}
+
+.welcome-section .working-area {
+    background-image: url(../img/Husky-logo.svg);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+img.center {
+    display: block;
+    margin : 10px auto;
+}
+
+.welcome-section .working-area {
+    padding-top: 260px;
+}
+
+.welcome-title {
+    line-height: 150%;
+    font-size: $font-large;
+    font-family   : 'NotoSans-Bold';
+}
+
+.lifecycle-title span {
+    background-color: $blue;
+    color           : white;
+    font-family     : 'NotoSans-Bold';
+    font-size       : $font-large;
+    /* padding-left: 0.2em;
+    padding-right: 0.2em; */
+}
+
+
+/* tablet */
+/* @media screen and (max-width: 1400px) {
+    .welcome-section {
+        min-height: 1100px;
+    }
+
+    .welcome-title {
+        top      : 240px;
+        font-size: $font-medium;
+    }
+} */
+
+/* phone */
+/* @media screen and (max-width: 650px) {
+    .welcome-section {
+        min-height: 850px;
+    }
+
+    .welcome-title {
+        top      : 4em;
+        font-size: $font-medium;
+    }
+
+    .lifecycle-title {
+        top: 14em;
+    }
+} */
+
+
+.button-wrap {
+    margin: 1.5em 0;
+}
+
+
+/*****  project-section *****/
+
+.project-section {
+    min-height: 600px;
+}
+
+.project-section .working-area {
+    padding-top: 160px;
+}
+
+.project-container {
+    margin-top: 120px;
+}
+
+/* tablet */
+/* @media screen and (max-width: 1400px) {
+    .project-section {
+        min-height: 900px;
+    }
+} */
+
+/* phone */
+/* @media screen and (max-width: 650px) {
+    .project-section {
+        min-height: 190vw;
+    }
+
+    .title-dark {
+        top: 10vw;
+    }
+
+    .project-container {
+        top: 20vw;
+    }
+
+    #empty-cell {
+        display: none;
+    }
+} */
+
+
+
+
+
+
+/***** overview-section *****/
+
+.overview-section {
+    min-height     : 800;
+    margin-top     : 0;
+    background-size: 30%;
+}
+
+.table-title-azure {
+    font-family   : 'NotoSans-Bold';
+    font-size     : $font-small;
+    padding-top   : 5px;
+    padding-bottom: 10px;
+    color         : $azure
+}
+
+.overview-section .working-area {
+    margin-top: 60px;
+}
+
+.overview-container {
+    // extra top margin to add to the title-dark bottom margin
+    margin-top: 120px;
+}
+
+.go-to-gitlab {
+    margin-top : 160px;
+}
+
+.title-right-dark {
+    margin-bottom: 30px;
+    font-family: 'NotoSans-Bold';
+    font-size  : $font-large;
+}
+
+.button-describing {
+    margin-top: 1.5em;
+}
+
+.line-yaook-husky {
+    background: url('../img/line-yaook-husky.svg') no-repeat;
+    width: 100%;
+    height: 20vw;
+    
+}
+
+.husky-table {
+    background-image: url('../img/Husky-black.svg');
+    background-repeat: no-repeat;
+    width: 90px; 
+    height: 80px;
+    display: inline-block;
+}
+
+/* tablet */
+/* @media screen and (max-width: 1400px) {
+    .overview-section {
+        min-height: 1650px;
+    }
+
+    .go-to-gitlab {
+        position: relative;
+        top     : 60px;
+    }
+
+    .column-right {
+        position: absolute;
+        right   : 0;
+        width   : 430px !important;
+    }
+} */
+
+/* phone */
+/* @media screen and (max-width: 650px) {
+    .overview-section {
+        min-height: 350vw;
+    }
+
+    .column-right {
+        position: absolute;
+        right   : 0 !important;
+        width   : 65vw !important;
+    }
+
+    .overview-container {
+        position: relative;
+        top     : 20vw;
+    }
+
+    .husky-table {
+        width : 16vw;
+        height: 13vw;
+    }
+
+    .go-to-gitlab {
+        top: 20vw;
+    }
+
+    .title-right-dark {
+        position: relative;
+        bottom  : 5vw;
+    }
+} */
+
+
+
+/***** alasca-section *****/
+
+.alasca-section {
+    min-height         : 1000px;
+    background-image   : url('../img/Husky-white-cut.svg');
+    background-repeat  : no-repeat;
+    background-size    : 800px 1000px;
+    background-color   : $azure;
+    background-position: right -100px bottom -35%;
+    padding-bottom: 3em;
+}
+
+.alasca-section .working-area {
+    padding-top: 180px;
+}
+
+.title-white {
+    color      : white;
+    font-family   : 'NotoSans-Bold';
+    font-size     : $font-large;
+}
+
+.table-title-white {
+    padding-top   : 5px;
+    padding-bottom: 10px;
+    color         : white;
+    font-family   : 'NotoSans-Bold';
+}
+
+.normal-text-white {
+    font-family: 'NotoSans-Regular';
+    font-size  : $font-very-small;
+    color      : white;
+}
+
+.contact-group {
+    display: flex;
+    padding-right: 33.3333%;
+
+    &.wide {
+        padding-right: 0;
+    }
+}
+
+.contact-entity {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5em;
+    flex: 1 1 33.3333333%;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    > h3 {
+        flex: 0 0 auto;
+    }
+
+    > div {
+        flex: 0 0 auto;
+    }
+
+    > div.filler {
+        flex: 1 1 auto;
+    }
+
+    > .paragraphy {
+        margin-bottom: 1.5em;
+    }
+
+    .placeholder-h4 {
+        padding-top: 5px + $font-very-small * 1.2 + 10px;
+        margin-bottom: .5rem;
+    }
+
+    .placeholder-h3 {
+        padding-top: 5px + $font-small * 1.2 + 10px;
+        margin-bottom: .5rem;
+    }
+
+    h4 {
+        font-family: 'NotoSans-Bold';
+        font-size  : $font-very-small;
+        color      : white;
+    }
+}
+
+/* laptop */
+/* @media screen and (max-width: 1600px) {
+    .alasca-section {
+        background-position: right -200px top 30%;
+    }
+} */
+
+/* tablet */
+/* @media screen and (max-width: 1400px) {
+    .alasca-section {
+        min-height      : 1300px;
+        background-image: none;
+    }
+} */
+
+/* smatrphone */
+/* @media screen and (max-width: 650px) {
+    .alasca-section {
+        min-height      : 360vw;
+        background-image: none;
+    }
+
+    .title-white {
+        position: relative;
+        top     : 15vw;
+    }
+} */
+
+
+
+/***** lifecycle-management-section *****/
+
+.lifecycle-management-section {
+    min-height   : 1080px;
+    margin-bottom: 90px;
+}
+
+.lifecycle-management-section .working-area {
+    padding-top: 130px;
+}
+
+.big-title-dark {
+    line-height: 115%;
+    font-size     : $font-very-large;
+    font-family   : 'NotoSans-Bold';
+}
+
+.lifecycle-management-container {
+    margin-top: 100px;
+}
+
+/*  tablet */
+/* @media screen and (max-width: 1400px) {
+    .lifecycle-management-section {
+        min-height   : 1080px;
+        margin-bottom: 90px;
+    }
+
+    .big-title-dark {
+        font-size: $font-very-large;
+    }
+} */
+
+/* phone */
+/* @media screen and (max-width: 650px) {
+    .lifecycle-management-section {
+        min-height   : 210vw;
+    }
+
+    .big-title-dark {
+        font-size: $font-very-large;
+    }
+
+    .big-title-dark {
+      top        : 17vw;
+  }
+
+  .lifecycle-management-container{
+      top: 30vw;
+  }
+
+  .table-title-grey{
+      padding-bottom: 0;
+  }
+} */
+
+
+
+/***** get-in-touch-section *****/
+
+.get-in-touch-section {
+    min-height       : 465px;
+    width            : 100%;
+    background-image : url(../img/winter2.jpg);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    margin           : 0 auto;
+    display          : block;
+    border-bottom    : 20px solid $azure;
+}
+
+.get-in-touch-section .working-area {
+    padding-top: 90px;
+}
+
+.get-in-touch-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* phone */
+/* @media screen and (max-width: 650px) {
+  .get-in-touch-section {
+      height           : 100vw;
+  }
+
+  .get-in-touch-title{
+      top: 10vw;;
+  }
+
+  .get-in-touch-container {
+      position: relative;
+      top     : 20vw;
+  }
+} */
+
+
+
+
+
+/***** job-section *****/
+
+.job-section {
+    margin-bottom: 130px;
+}
+
+.job-section .working-area {
+    padding-top: 130px;
+}
+
+/* tablet */
+/* @media screen and (max-width: 1400px) {
+    .job-section {
+        min-height: 800px;
+    }
+} */
+
+/* phone */
+/* @media screen and (max-width: 650px) {
+  .job-section {
+      min-height: 80vw;
+  }
+} */
+
+/* hack for the irregular layout */
+
+.job-section p.table-title-grey {
+    margin-top: 1.5em;
+}
+
+
+
+/***** contact-section *****/
+
+.contact-section {
+    min-height      : 800px;
+    background-color: $azure;
+}
+
+.contact-section .working-area {
+    padding-top: 130px;
+}
+
+.whiteLink {
+
+    display        : inline-block;
+    cursor         : pointer;
+    color          : #ffffff;
+    font-family    : 'NotoSans-Regular';
+    text-decoration: none;
+    font-size      : $font-very-small;
+}
+
+.whiteLink:hover {
+    color          : #ffffff;
+    text-decoration: none;
+}
+
+.whiteLink:active {
+    text-decoration: none;
+}
+
+
+.bold-text-white {
+    font-family: 'NotoSans-Bold';
+    font-size  : $font-very-small;
+    color      : white;
+}
+
+.footer-columns {
+    display: flex;
+    font-family    : 'NotoSans-Regular';
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 1 1 30%;
+    font-size: $font-very-small;
+    margin: 0 1.5em;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    > * {
+        flex: 0 0 auto;
+    }
+
+    > div {
+        margin-bottom: 1.5em;
+    }
+
+    > .push {
+        flex: 1 1 1px;
+        margin: 0;
+    }
+
+    > .final {
+        min-height: 1.2 * $font-very-small * 5;
+    }
+
+    .placeholder-h4 {
+        padding-top: 5px + $font-very-small * 1.2 + 10px;
+        margin-bottom: .5rem;
+    }
+
+    .placeholder-h3 {
+        padding-top: 5px + $font-small * 1.2 + 10px;
+        margin-bottom: .5rem;
+    }
+
+    h3 {
+        font-family: 'NotoSans-Bold';
+        font-size  : $font-small;
+        color      : white;
+        padding-top   : 5px;
+        padding-bottom: 10px;
+    }
+
+    h4 {
+        font-family: 'NotoSans-Bold';
+        font-size  : $font-very-small;
+        color      : white;
+        padding-top   : 5px;
+        padding-bottom: 10px;
+    }
+
+    h5 {
+        font-size: inherit;
+        font-family: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fakepar {
+        margin: 0;
+    }
+
+    a, a:hover, a:visited, a:active, a:focus {
+        text-decoration: none;
+        color: white;
+        font-size: inherit;
+    }
+}
+
+.copyright {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.husky-copyright {
+    background-image : url('../img/Husky-white.svg');
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+}
+
+.eu-logo {
+    background-color: white;
+    background-image : url('../img/efre_en.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
+    width: 440px;
+    height: 120px;
+}
+
+.eu-logo-german {
+    @extend .eu-logo;
+    background-image : url('../img/efre_de.png');
+}
+
+/* @media screen and (max-width: 1400px) {
+    .contact-section {
+        min-height: 1350px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+  .contact-section {
+      min-height: 300vw;
+  }
+
+  .contact-container {
+      top     : 15vw;
+  }
+
+  .contact-row{
+      row-gap: 7vw !important;
+  }
+} */
+
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 1536px) {
+    // special case for the partners section husky
+
+    .alasca-section {
+        background-size    : 600px 750px;
+        background-position: right -50px bottom -10px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    // special case for the partners section husky
+
+
+    .alasca-section {
+        background-size    : 400px 500px;
+        background-position: right -50px bottom -10px;
+    }
+}
+
+
+/* larger tablets */
+@media screen and (max-width: $large-tablet-threshold) {
+    .working-area {
+        width: auto;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    .overview-section .working-area {
+        margin-top: 120px;
+    }
+}
+
+/* smaller tablets */
+@media screen and (max-width: $small-tablet-threshold) {
+    // here we need to start linearizing stuff
+
+    .container .col-sm-4 {
+        width: 100%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .container .col-sm-4.linearize-slim {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .contact-group, .contact-entity {
+        display: block;
+        margin: 3em 0;
+        padding: 0;
+    }
+
+    .alasca-section .working-area {
+        padding-bottom: 400px;
+    }
+
+    .col-sm-4.column-right {
+        margin-left: 0;
+    }
+
+    .go-to-gitlab {
+        margin-top: 0;
+        margin-bottom: 240px;
+    }
+
+    .overview-section {
+        background-size: 300px;
+    }
+
+    #empty-cell {
+        display: none;
+    }
+
+    .footer-columns {
+        display: block;
+    }
+
+    .placeholder-h3, .placeholder-h4 {
+        display: none;
+    }
+
+    .footer-column {
+        display: block;
+        margin: 0 0;
+
+        > .final {
+            min-height: 0;
+        }
+    }
+}
+
+@media screen and (max-width: $large-smartphone-threshold) {
+    .table-title-grey, .table-title-azure, .table-title-white, .normal-text-white, .footer-column h3 {
+        font-size: $sfont-small;
+    }
+
+    .normal-text-grey, .whiteLink, .bold-text-white, .footer-column h4, .footer-column, .bold-text-grey {
+        font-size: $sfont-very-small;
+    }
+
+    .yaookButton, .yaookButton-white {
+        font-size: $sfont-button;
+    }
+
+    .welcome-title, .lifecycle-title span, .title-dark, .title-right-dark, .title-white {
+        font-size: $sfont-large;
+    }
+
+    .big-title-dark {
+        font-size: $sfont-very-large;
+    }
+
+    .get-in-touch-section .working-area {
+        padding-top: 45px;
+    }
+
+    .get-in-touch-container {
+        margin-top: 8px;
+    }
+
+    .footer-column .placeholder-h3 {
+        padding-top: calc(5px + $sfont-small * 1.2 + 10px);
+    }
+
+    .footer-column .placeholder-h3 {
+        padding-top: calc(5px + $sfont-very-small * 1.2 + 10px);
+    }
+
+    .overview-section .overview-container {
+        margin-top: 60px;
+    }
+
+    .language-picker .fold {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        top: -100px;
+    }
+}
