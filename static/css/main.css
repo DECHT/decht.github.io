@@ -62,7 +62,7 @@
 
 .normal-text-grey {
     font-family: 'NotoSans-Regular';
-    font-size: 14pt
+    font-size: 15pt
 }
 
 .yaookButton {
@@ -127,7 +127,7 @@
     background-image: url(../img/apotheke-logo.png);
     background-size: 130px;
     background-repeat: no-repeat;
-    background-position: center 0
+    background-position: center 10%;
 }
 
 img.center {
@@ -237,7 +237,7 @@ img.center {
 
 .normal-text-white {
     font-family: 'NotoSans-Regular';
-    font-size: 14pt;
+    font-size: 15pt;
     color: #fff
 }
 
@@ -293,7 +293,7 @@ img.center {
 
 .contact-entity h4 {
     font-family: 'NotoSans-Bold';
-    font-size: 14pt;
+    font-size: 15pt;
     color: #fff
 }
 
@@ -358,7 +358,7 @@ img.center {
     color: #fff;
     font-family: 'NotoSans-Regular';
     text-decoration: none;
-    font-size: 14pt
+    font-size: 15pt
 }
 
 .whiteLink:hover {
@@ -372,7 +372,7 @@ img.center {
 
 .bold-text-white {
     font-family: 'NotoSans-Bold';
-    font-size: 14pt;
+    font-size: 15pt;
     color: #fff
 }
 
@@ -386,7 +386,7 @@ img.center {
     flex-direction: column;
     color: #fff;
     flex: 1 1 30%;
-    font-size: 14pt;
+    font-size: 15pt;
     margin: 0 1.5em
 }
 
@@ -435,7 +435,7 @@ img.center {
 
 .footer-column h4 {
     font-family: 'NotoSans-Bold';
-    font-size: 14pt;
+    font-size: 15pt;
     color: #fff;
     padding-top: 5px;
     padding-bottom: 10px
